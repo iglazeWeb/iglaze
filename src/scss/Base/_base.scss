@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: 'walkway_boldregular';
+    src: url('../fonts/Walkway_Bold-webfont.eot');
+    src: url('../fonts/Walkway_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Walkway_Bold-webfont.woff') format('woff'),
+         url('../fonts/Walkway_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Walkway_Bold-webfont.svg#walkway_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+img {
+    max-width: 100%;
+    //width: 100%;
+    height: auto;
+  }
+
+/* ------------------------------------------
+  ==clearfix
+--------------------------------------------- */
+.clearfix:after {
+  content:" ";
+  display:table;
+  clear:both;
+}

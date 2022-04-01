@@ -1,0 +1,58 @@
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  background: #fff;
+  font: normal 100%/1.4 sans-serif;
+}
+
+
+section {
+  height: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* ------------------------------------------
+  ==building background image
+--------------------------------------------- */
+
+#building{
+  background-image: url(../img/mobile-doors.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #333;
+  height: 33em;
+  width: 100%;
+  max-width: 100%;
+  background-attachment: fixed;
+  background-position: center 118px;
+  img {
+    width: 90%;
+  }
+
+
+  @include breakpoint ($tablet-portrait) {
+  height: 40em;
+  background-image: url(../img/mobile-doors.jpg);
+  background-size: cover;
+  background-position:center 100px;
+
+  } //tablet
+  @include breakpoint ($large-desktop){
+  background-image: url(../img/retina-bg.jpg);
+  background-position: center top;
+}//desktop
+
+  @include breakpoint ($retina){
+  background-image: url(../img/retina-bg.jpg);
+  background-position: center top;
+  background-size: cover;
+
+
+  }
+
+
+}

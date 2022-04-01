@@ -1,0 +1,26 @@
+#gallery-img {
+  background-color: #fff;
+  padding: 2em;
+  h1 {
+    color: #376ab0;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: walkway_boldregular, sans-serif;
+    padding: 0.5em 0 0.5em 0;
+  }
+}
+.flex-grid {
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+  padding: 8px 8px;
+  margin: 0 2.5px 0 2.5 0;
+}
+
+@media (max-width: 750px) {
+  .flex-grid .col {
+    padding: 1px;
+    margin: 1px;
+  }
+}

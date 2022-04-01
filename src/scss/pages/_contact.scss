@@ -1,0 +1,290 @@
+/* ------------------------------------------
+  ==contact
+--------------------------------------------- */
+
+
+.img--split {
+  height: 28em;
+  background-image: url(../img/mobile-windows.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  @include breakpoint($tablet){
+    height: 40em;
+    background-position: center;
+
+  } //tablet
+
+  @include breakpoint($large-desktop) {
+    display: none;
+  }
+}
+
+section#ContactUs {
+  background-color: #fff;
+  height: 36em;
+  h1{
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0px 3px 3px rgba(0,0,0,0.4),
+                 0px 4px 1px rgba(0,0,0,0),
+                 0px 3px 0px rgba(0,0,0,0.1);
+    font-family: walkway_boldregular, sans-serif;
+    padding-top: 0.5em;
+    }
+    @include breakpoint($tablet-landscape){
+      width: 100%;
+      margin: 0 auto;
+  } //tablet
+  @include breakpoint($desktop){
+      height: 35em;
+    .img--right {
+      display: none;
+    }
+
+
+
+
+  } //desktop
+  @include breakpoint ($large-desktop) {
+    .img--right {
+      display: block;
+      height: 35em;
+      width: 50%;
+      background-image: url(../img/50/kitchen1.jpg);
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-position: center top;
+      float: right;
+    }
+    #contact-form {
+    width: 50%;
+    float: left
+    }
+    h1 {
+      text-align: left;
+      margin-left: 2em;
+      font-size: 2rem;
+      padding: 0.5em 0 0.5em 0;
+    }
+  }
+
+
+
+} //contact
+
+ .formblock{
+  text-align: center;
+  @include breakpoint($large-desktop) {
+    text-align: left;
+    padding-left: 2em;
+  }
+    @include breakpoint($retina) {
+        padding-left: 6em;
+    }
+}
+
+
+
+#contact .desc h2 {
+
+  font-weight: normal;
+  letter-spacing: -0.03em;
+  color: #444;
+  font-size: 2.4em;
+  margin-bottom: 8px;
+}
+
+#contact .desc p {
+  font-family: Roboto, sans-serif;
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.3em;
+  margin-bottom: 15px;
+}
+
+#contact .formblock {
+  display: block;
+  margin-bottom: 11px;
+}
+
+#contact .formblock label {
+  font-size: 1.1em;
+  display: block;
+  font-style: italic;
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
+  color: #eee;
+  text-align: center;
+  @include breakpoint($large-desktop){
+    text-align: left;
+    }
+}
+
+#contact .formblock .txt {
+  padding: 4px 6px;
+  font-size: 1.6em;
+  font-family: Roboto, sans-serif;
+  color: #666;
+  width: 330px;
+  @include breakpoint ($mobile-small) {
+      width: 290px;
+  }
+}
+
+#contact .formblock .txtarea {
+  font-size: 1.5em;
+  font-family: Roboto, sans-serif;
+  padding: 3px 5px;
+  color: #666;
+  width: 330px;
+  height: 140px;
+  @include breakpoint ($mobile-small) {
+    width: 290px;
+  }
+}
+
+#contact .formblock .error {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-style: normal;
+  font-family: Roboto, sans-serif;
+  color: #9d3131; }
+
+#contact .info {
+  text-align: center;
+  font-weight: bold; font-size: 1.2em;
+  color: #eee;
+  margin-bottom: 10px;
+  font-family: Roboto, sans-serif;
+  text-shadow: 0px 1px 3px rgba(0,0,0,0.4),
+               0px 2px 1px rgba(0,0,0,0.1),
+               0px 1px 0px rgba(0,0,0,0.1);
+  @include breakpoint($large-desktop){
+    text-align: left;
+    margin-left: 6em;
+  }
+}
+
+#contact p.tick {
+  font-family: Roboto, sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  padding-top: 4em;
+  margin-left: 2em;
+  @include breakpoint($large-desktop){
+    margin-left: 2em;
+  }
+}
+
+.button--containter {
+  width: 100%;
+  text-align: center;
+    @include breakpoint($large-desktop){
+      text-align: left;
+    }
+}
+
+#contact .subbutton {
+  padding: 3px 7px;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Roboto, sans-serif;
+  color: #eee;
+  background-color: $blue;
+  text-align: center;
+  @include breakpoint($tablet-landscape) {
+    margin-left: 2em;
+  }
+  @include breakpoint($retina){
+    margin-left: 5.5em;
+  }
+
+
+p.alert {
+  color: #9d3131;
+  text-align: center;
+  @include breakpoint($large-desktop){
+    text-align: left;
+    margin-left: 6em;
+
+  }
+ }
+}
+
+
+/* ------------------------------------------
+  ==Enquiries
+--------------------------------------------- */
+section#Enquiries {
+  background-color: #333;
+  height: 22em;
+  .address {
+    width: 100%;
+    text-align: center;
+    h5 {
+      color: #376ab0;
+      font-size: 2rem;
+      font-family: walkway_boldregular, sans-serif;
+      text-shadow: 0px 0px 1px rgba(0,0,0,0.4),
+      0px 4px 1px rgba(0,0,0,0.1),
+      0px 3px 0px rgba(0,0,0,0.1);
+      padding-top: 1em;
+      text-align: center;
+
+
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $blue;
+      text-decoration: underline;
+    }
+    p {
+      padding-top: 0.5em;
+      text-align: center;
+      color: #fff;
+      line-height: 1.5em;
+      font-size: 1.3rem;
+      font-family: Roboto, sans-serif;
+    }
+    span {
+      color: #376ab0;
+      font-size: 1.3rem;
+      text-shadow: 0px 0px 1px rgba(0,0,0,0.4),
+      0px 4px 1px rgba(0,0,0,0.1),
+      0px 3px 0px rgba(0,0,0,0.1);
+      font-family: Roboto, sans-serif;
+    }
+    @include breakpoint($tablet-portrait) {
+      text-align: left;
+    } //tablet
+    @include breakpoint($desktop) {
+      h5{
+        padding-top: 4em;
+      }
+    } //desktop
+  } //address
+
+  @include breakpoint($desktop) {
+      height: 33em;
+  }
+  @include breakpoint($large-desktop) {
+      .img--left {
+      display: block;
+      height: 33em;
+      width: 50%;
+      background-image: url(../img/50/entrance.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      float: left;
+    }
+ }
+}

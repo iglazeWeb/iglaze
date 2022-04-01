@@ -1,0 +1,151 @@
+/* ------------------------------------------
+  ==Home
+--------------------------------------------- */
+
+section#home {
+  //mobile
+  @include breakpoint ($mobile-small) {
+    height: 70vh;
+    max-height: auto;
+    background-image: url(../img/mobile-home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    background-color: #464646;
+  };
+  @include breakpoint ($mobile) {
+    height: 70vh;
+    max-height: auto;
+    background-image: url(../img/mobile-home.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    background-color: #464646;
+  }
+
+  @include breakpoint ($five) {
+    max-height: auto;
+    background-image: url(../img/mobile-home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+    @include breakpoint ($tablet) {
+      height: 80vh;
+      background-image: url(../img/home/home-test.jpg);
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+
+
+    }
+
+
+  @include breakpoint ($desktop) {
+    height: 90vh;
+    background-image: url(../img/home/home-test.jpg);
+    background-size: cover;
+
+    background-position: center bottom;
+    //background-attachment: fixed;
+  } //desktop
+
+  @include breakpoint ($large-desktop){
+    height: 100vh;
+
+    background-image: url(../img/home/home-doors.jpg);
+    background-size: cover;
+    //position: relative;
+    background-position: center bottom;
+    background-attachment: fixed;
+  } //desktop
+
+  @include breakpoint ($retina){
+    height: 90vh;
+    background-image: url(../img/home/home-doors.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  } //desktop
+} //home
+
+
+
+#slogan {
+  //mobile
+  top: 50%;
+  position: relative;
+  height: 3.8em;
+  background-color: rgba(0,0,0,.4);
+    @include breakpoint ($mobile-small) {
+      top: 12em;
+      height: 5.3em;
+    }
+    @include breakpoint ($tablet) {
+      height: 4.6em;
+      background-color: rgba(0,0,0,.4);
+      top: 50%;
+    }
+    @include breakpoint ($desktop) {
+    background-color: rgba(0,0,0,.4);
+    top: 40%;
+    height: 7.2em;
+    }
+
+  .tagline {
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: $primary-font;
+  text-align: center;
+  .mobile--break {
+    display: none;
+  }
+    @include breakpoint ($mobile-small) {
+      .mobile--break {
+        display: block;
+      }
+    }
+    @include breakpoint ($tablet) {
+    font-size: 1.8rem;
+      .mobile--break {
+        display: none;
+      }
+    }
+    @include breakpoint ($desktop) {
+      font-size: 2.5rem;
+      top: 20em;
+      .mobile--break {
+        display: none;
+      }
+    }
+    @include breakpoint ($large-desktop) {
+      font-size: 2.8rem;
+      top: 20em;
+    }
+  }
+
+  .tagline2 {
+    @include breakpoint ($mobile-small) {
+    font-size: 0.7rem;
+    }
+    color: #fff;
+    font-size: 0.8rem;
+    text-shadow: 0px 6px 3px rgba(0,0,0,0.4),
+    0px 8px 1px rgba(0,0,0,0.1),
+    0px 6px 0px rgba(0,0,0,0.1);
+    font-family: $primary-font;
+    text-align: center;
+    margin-top: 0.7em;
+    @include breakpoint ($tablet) {
+      font-size: 1.2rem;
+      margin-top: 0.3em;
+    }
+    @include breakpoint ($desktop) {
+    font-size: 1.8rem;
+    margin-top: 0em;
+    }
+  }
+}
